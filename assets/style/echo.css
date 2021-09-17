@@ -1,9 +1,8 @@
 /* page echo style */
 
-
-/* main {
+main {
     background: #302429 url(../image/bg-body.jpg) no-repeat center top;
-} */
+}
 
 section.hero {
     margin: 0 auto;
@@ -25,7 +24,7 @@ section.hero:before {
     left: 0;
     width: 100%;
     height: 75%;
-    background: linear-gradient( 180deg, transparent, #000);
+    background: linear-gradient( 180deg, transparent, #302429);
     mix-blend-mode: multiply;
     pointer-events: none;
 }
@@ -76,8 +75,9 @@ section.hero:before {
 .lists {
     width: 100%;
     height: auto;
-    background-color: #000;
+    background-color: #302429;
     margin: 0 auto;
+    padding-top: 45px;
 }
 
 .lists__item {
