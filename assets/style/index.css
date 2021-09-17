@@ -1,0 +1,448 @@
+main {
+    background: #302429 url(../image/bg-body.jpg) no-repeat center top;
+}
+
+section.hero {
+    margin: 0 auto;
+    background-image: url(../image/game_slide_small_1.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero__inner {
+    z-index: 1;
+    padding-top: 92px;
+    margin-top: 134px;
+    padding-bottom: 113px;
+}
+
+.sold-out {
+    display: inline-flex;
+    margin-bottom: 24px;
+    padding: 12px;
+    background-color: hsla(0, 0%, 76.9%, .4);
+}
+
+.sold-out img {
+    width: 20px;
+}
+
+.sold-out span {
+    font-size: 18px;
+    margin-left: 12px;
+    color: #fff;
+}
+
+.hero__inner h2 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.hero__inner p {
+    font-size: 18px;
+    color: #c4c4c4;
+    max-width: 630px;
+    line-height: 1.6;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+}
+
+.content__top {
+    background: url(../image/bg-body-top.png) repeat-x center top;
+    height: 52px;
+    position: relative;
+    z-index: 1;
+    margin-top: -12px;
+}
+
+.big-sep {
+    background: url(../image/big-sep.png) repeat-x top left;
+    height: 8px;
+    margin: 1.66667rem 0;
+}
+
+.content__title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.content__title h2 {
+    color: #c5db3b;
+    font-size: 48px;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content__title p {
+    font-size: 15px;
+    color: #fff;
+    margin-top: 16px;
+}
+
+.content__inner {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 36px 0px 56px;
+    box-shadow: 0 10px 30px rgb(149 164 189 / 15%);
+}
+
+.content__row {
+    max-width: 990px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.tab {
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.tab__item {
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab__item span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #9e9e9e;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.tab__item svg {
+    width: 20px;
+    fill: #9e9e9e;
+    transition: 0.2s;
+}
+
+.tab__item.show span {
+    color: #333132;
+}
+
+.tab__item.show svg {
+    fill: #333132;
+}
+
+.tab__item.show {
+    border-bottom: 2px solid;
+    border-bottom-color: #c5db3b;
+}
+
+.tab__item.show::after {
+    content: none;
+}
+
+.tab__item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+    transform: scale(0);
+    background-color: #c5db3b;
+}
+
+.tab__item:hover::after {
+    transform: scale(1);
+}
+
+.content__item {
+    display: none;
+}
+
+.content__item.show {
+    display: flex;
+}
+
+.content01 {
+    align-items: flex-start;
+}
+
+.content02,
+.content03 {
+    padding: 24px 36px;
+    background-color: #fff5e6;
+}
+
+.content02 p,
+.content03 p {
+    font-size: 16px;
+    color: #333132;
+}
+
+.content__img {
+    width: 41.66%;
+}
+
+.content__desc {
+    flex: 1;
+    padding-left: 5.8%;
+}
+
+.content__desc h5 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #6d6d6d;
+    font-weight: 400;
+}
+
+.content__line {
+    width: 100%;
+    height: 15px;
+    border-radius: 100rem;
+    background: #e5e5e5;
+    margin-bottom: 25px;
+    overflow: hidden;
+    background: linear-gradient( 118.2deg, #c5db3b 14.96%, #8ab52d 80.05%);
+}
+
+.content__box {
+    margin-bottom: 16px;
+    padding: 24px 36px;
+    background-color: #fff5e6;
+}
+
+.content__box p {
+    font-size: 16px;
+}
+
+.content__box p a {
+    text-decoration: underline;
+    color: #000;
+}
+
+.content__desc .text {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 16px;
+}
+
+.content__desc .code {
+    font-size: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 1px dashed #000;
+    font-weight: 600;
+}
+
+.change__total {
+    margin-bottom: 24px;
+}
+
+.change__total span:first-child {
+    font-size: 16px;
+    color: #6d6d6d;
+}
+
+.change__total span:last-child {
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+.input__change {
+    margin: 0 16px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgb(229, 231, 235);
+}
+
+.input__change div {
+    width: 32px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.input__change div svg {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input__change div.input {
+    width: 48px;
+    border-left: 1px solid rgb(229, 231, 235);
+    border-right: 1px solid rgb(229, 231, 235);
+}
+
+.input__change div.input input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.change__total span.total__max {
+    font-size: 12px;
+    color: #fff;
+    padding: 4px 12px;
+    background-color: #9e9e9e;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+
+.change__total span.total__max:hover {
+    background-color: #000;
+}
+
+.submit button {
+    width: 100%;
+    font-size: 20px;
+    padding: 18px;
+    background: linear-gradient(to bottom, #c5db3b 0%, #8ab52d 100%);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 900;
+}
+
+.content__bottom {
+    padding: 36px 0px;
+}
+
+.block__desc {
+    margin-bottom: 36px;
+}
+
+.block__desc:nth-child(2) {
+    margin-bottom: 0px;
+}
+
+.block__desc h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #333132;
+}
+
+.block__desc p {
+    font-size: 18px;
+    color: #333132;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width:767px) {
+    section.hero {
+        min-height: unset;
+    }
+    .hero__inner {
+        margin-top: 80px;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    .hero__inner h2 {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+    .hero__inner p {
+        font-size: 16px;
+    }
+    .sold-out {
+        margin-bottom: 12px;
+    }
+    .content__inner {
+        margin-top: 0px;
+        box-shadow: unset;
+        padding: 20px 0px;
+    }
+    .top-header__l span {
+        font-size: 17px;
+    }
+    .tab__item svg {
+        width: 15px;
+    }
+    .tab__item span {
+        font-size: 14px;
+        margin-left: 8px;
+    }
+    .tab {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .tab__item {
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+    .tab__item {
+        margin-right: 10px;
+    }
+    .content01 {
+        flex-wrap: wrap;
+    }
+    .content__img {
+        width: 100%;
+    }
+    .content__desc {
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+    .content__desc h5 {
+        font-size: 16px;
+    }
+    .content__box {
+        padding: 20px 24px;
+    }
+    .content__desc .text {
+        font-size: 14px;
+    }
+    .content__desc .code {
+        font-size: 20px;
+    }
+    .change__total {
+        flex-wrap: wrap;
+    }
+    .change__total span:last-child {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .change__total span:first-child {
+        font-size: 14px;
+    }
+    .submit button {
+        font-size: 16px;
+        padding: 14px;
+    }
+    .content__row {
+        padding: 0px;
+    }
+    .block__desc h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .block__desc p {
+        font-size: 16px;
+    }
+    .content__title h2 {
+        font-size: 24px;
+    }
+    .content__title p {
+        margin-top: 12px;
+    }
+}

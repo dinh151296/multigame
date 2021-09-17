@@ -1,0 +1,3 @@
+clone : https://x21digital.com/
+- đổi logo
+- lấy footer bên mutigame bỏ qua

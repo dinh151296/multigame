@@ -1,0 +1,435 @@
+/* common style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    transition: .2s;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.container {
+    max-width: 1210px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container__bg {
+    background: #fff;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.dflex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.sp-only {
+    display: none;
+}
+
+
+/* =======header style======= */
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.top-header {
+    background: linear-gradient(109.29deg, rgb(234 224 139) 24.92%, rgb(111, 243, 252) 74.08%);
+    transition: 0.3s;
+    margin-top: 0px;
+    background: linear-gradient(to bottom, #c5db3b 0%, #8ab52d 100%);
+}
+
+.top-header.show {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding: 12px 0px;
+}
+
+.top-header__l img {
+    width: 32px;
+}
+
+.top-header__l span {
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.header__inner .center p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header__inner .center img {
+    width: 16px;
+    margin-left: 18px;
+}
+
+.top-header__link {
+    margin-right: 32px;
+    padding: 4px 20px;
+    height: 36px;
+    background-color: #000;
+    border-radius: 30px;
+}
+
+.top-header__link img {
+    width: 20px;
+}
+
+.top-header__link span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.header__inner .close {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 20px;
+    cursor: pointer;
+}
+
+.main-header {
+    background-image: url(../image/bg-menu.png);
+    height: 94px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo a img {
+    width: 310px;
+}
+
+.unlock {
+    right: 0px;
+    padding: 6px 30px;
+    border-radius: 30px;
+    border: 1px solid #c5db3b;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.unlock:hover {
+    opacity: 0.7;
+}
+
+.unlock img {
+    max-width: 18px;
+}
+
+.unlock svg {
+    fill: #c5db3b;
+}
+
+.unlock span {
+    font-size: 18px;
+    margin-left: 12px;
+    font-weight: 600;
+    color: #c5db3b;
+    transition: 0.2s;
+}
+
+.account {
+    margin-left: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+.account-box {
+    z-index: 20;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    width: 360px;
+    padding: 2px;
+    border-radius: 6px;
+    background-image: linear-gradient( 139.44deg, #6ff3fc, #ffb1c9);
+}
+
+.account-box.show {
+    display: block;
+}
+
+.account-box__inner {
+    padding: 17px 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgb(149, 164, 189, 0.3);
+}
+
+.account-box__inner h3 {
+    font-size: 20px;
+    color: #333132;
+    margin-bottom: 5px;
+}
+
+.account-box__inner>p {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #333132;
+}
+
+.account-row {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.account-row img {
+    width: 55px;
+    margin-right: 12px;
+}
+
+.account>img {
+    width: 38px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+.account__name h5 {
+    font-size: 14px;
+    color: #9e9e9e;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+.links {
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.links a {
+    padding: 8px 12px;
+    transition: 0.2s;
+}
+
+.links a:hover {
+    background-color: #ffe6ed;
+}
+
+.links a>p {
+    font-size: 16px;
+    color: #333132;
+    margin-left: 16px;
+}
+
+.links a>p>span {
+    color: #2979ff;
+}
+
+.account__name>p {
+    font-size: 16px;
+    color: #333132;
+}
+
+.account>p {
+    font-size: 18px;
+    color: #9e9e9e;
+}
+
+.account p span {
+    color: #fff;
+}
+
+.nav__list li {
+    margin-right: 35px;
+}
+
+.nav__list li a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    font-family: bitter, serif;
+    text-transform: uppercase;
+}
+
+
+/* ======= end-header style======= */
+
+
+/* =========responsive=========  */
+
+@media only screen and (max-width: 1024px) {
+    .header__inner {
+        padding: 15px 0px;
+    }
+    .top-header__l {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .top-header__l img {
+        width: 24px;
+    }
+    .top-header__l span {
+        font-size: 18px;
+        margin-left: 12px;
+    }
+    .header__inner .center p {
+        font-size: 12px;
+    }
+    .header__inner .center img {
+        margin-left: 12px;
+    }
+    .top-header__link {
+        height: 32px;
+    }
+    .top-header__link span {
+        font-size: 14px;
+    }
+    .top-header__link img {
+        width: 16px;
+    }
+    .header__inner .close {
+        top: 25%;
+    }
+    .account>img {
+        width: 30px;
+    }
+    .sp-only {
+        display: block;
+    }
+    .pc-only {
+        display: none;
+    }
+    .unlock img {
+        max-width: 25px;
+    }
+    .unlock {
+        border: none;
+        padding: 10px 20px;
+    }
+    .account {
+        margin-left: 0px;
+    }
+    .burger {
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .burge img {
+        width: 35px;
+    }
+    .main-header {
+        position: relative;
+    }
+    .nav__list {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 74px;
+        background-color: #302429;
+        padding: 30px 20px;
+        z-index: 10;
+        height: 0px;
+        transition: height 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav__list.show {
+        height: 150px;
+        opacity: 1;
+        visibility: visible;
+        transition: height 0.3s ease;
+    }
+    .nav__list li {
+        text-align: center;
+        padding: 10px 0px;
+        margin-right: 0px;
+        transition: 0.2s;
+        transition-delay: 0.1s;
+    }
+    .nav__list li:last-child {
+        transition-delay: 0.2s;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header__inner .center {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .header__inner h1 {
+        width: 55%;
+    }
+    .logo a img {
+        width: 100%;
+        max-width: 274px;
+    }
+    .burger {
+        width: 30px;
+        margin-left: 10px;
+    }
+    .account>p {
+        display: none;
+    }
+    .unlock {
+        padding: 0px;
+    }
+    .account>img {
+        width: 20px;
+        margin-left: 10px;
+    }
+    .unlock img {
+        max-width: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .account-box {
+        width: 280px;
+        right: -20px;
+    }
+}

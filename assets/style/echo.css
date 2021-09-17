@@ -1,0 +1,177 @@
+/* page echo style */
+
+
+/* main {
+    background: #302429 url(../image/bg-body.jpg) no-repeat center top;
+} */
+
+section.hero {
+    margin: 0 auto;
+    background-image: url(../image/game_silde_2.jpg);
+    height: 732px;
+    min-height: 732px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    padding-bottom: 64px;
+    position: relative;
+}
+
+section.hero:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background: linear-gradient( 180deg, transparent, #000);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.hero__inner {
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+}
+
+.hero__inner img {
+    width: 480px;
+    margin-bottom: 36px;
+}
+
+.hero__inner h2 {
+    font-size: 42px;
+    margin-bottom: 36px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Bitter', serif;
+}
+
+.hero__inner h2 span {
+    color: #c5db3b;
+}
+
+.hero__inner button {
+    width: 335px;
+    height: auto;
+    font-size: 22px;
+    padding: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Luckiest Guy', cursive;
+    background: linear-gradient(to bottom, #c5db3b 0%, #8ab52d 100%);
+}
+
+.lists {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.lists__item {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.lists__item li {
+    background-color: #333132;
+    width: calc(100%/4 - 20px);
+    margin-bottom: 28px;
+}
+
+.lists__item li .video {
+    width: 100%;
+}
+
+.lists__item li .video video {
+    width: 100%;
+}
+
+.lists__item li .desc {
+    padding: 16px 20px;
+}
+
+.lists__item li .desc h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.lists__item li .desc p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.lists__item li .desc button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to bottom, #c5db3b 0%, #8ab52d 100%);
+    padding: 14px 12px;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 991px) {
+    .hero__inner {
+        width: 90%;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section.hero {
+        height: 487px;
+        min-height: 487px;
+        padding-bottom: 36px;
+    }
+    .hero__inner img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .hero__inner {
+        width: 100%;
+    }
+    .hero__inner h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .hero__inner button {
+        font-size: 16px;
+        width: 100%;
+        max-width: 350px;
+    }
+    .lists__item li {
+        width: 48.5%;
+        margin-bottom: 20px;
+    }
+    .lists__item li .desc {
+        padding: 12px;
+    }
+    .lists__item li .desc h4 {
+        font-size: 14px;
+    }
+    .lists__item li .desc p {
+        font-size: 12px;
+    }
+    .lists__item li .desc button {
+        padding: 10px;
+        font-size: 12px;
+    }
+}

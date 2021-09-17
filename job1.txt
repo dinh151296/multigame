@@ -1,0 +1,14 @@
+made 2 trang:
+
+common: 
+- header lấy bên https://cryptodefenders.io/
+- thêm 1 button bên phải game trên header 
+- thêm 1 
+
+Trang 1: 
+ link: https://multigame.org/magic-box
+
+
+Trang 2 : https://multigame.org/echo
++ lấy font chữ bên https://cryptodefenders.io/
++ đổi ảnh eyecatch, đổi video
